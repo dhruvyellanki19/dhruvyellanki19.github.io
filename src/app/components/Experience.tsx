@@ -179,7 +179,7 @@ export function Experience() {
             Experience.
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed font-light">
-            Building production AI systems that deliver measurable business impact.
+            Building production AI and ML systems that deliver measurable business impact.
           </p>
         </motion.div>
 

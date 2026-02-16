@@ -41,7 +41,7 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: "circOut" }}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-50">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.div
@@ -124,7 +124,7 @@ export function Navigation({ activeSection, onNavigate }: NavigationProps) {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            className="md:hidden fixed inset-0 top-[60px] bg-white/95 backdrop-blur-2xl z-40"
+            className="md:hidden fixed inset-0 top-0 bg-white z-40 pt-24"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}

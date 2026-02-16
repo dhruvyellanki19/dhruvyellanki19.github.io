@@ -31,7 +31,7 @@ export function Hero({ onNavigate }: HeroProps) {
         {/* Left Column: Text Content */}
         <motion.div
           style={{ y, opacity }}
-          className="text-left order-2 lg:order-1"
+          className="text-left w-full relative z-20 order-2 lg:order-1"
         >
           {/* Badge */}
           <motion.div
@@ -41,7 +41,7 @@ export function Hero({ onNavigate }: HeroProps) {
             className="inline-flex items-center gap-2 mb-8"
           >
             <span className="px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-blue-600 bg-blue-50 border border-blue-100 rounded-full">
-              Available May 2026
+              Available full-time May 2026
             </span>
           </motion.div>
 
@@ -50,23 +50,23 @@ export function Hero({ onNavigate }: HeroProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-            className="text-5xl sm:text-7xl lg:text-8xl font-semibold tracking-tight text-foreground mb-6 leading-[0.95]"
+            className="text-4xl sm:text-5xl lg:text-8xl font-semibold tracking-tight text-foreground mb-6 leading-[1.1] sm:leading-[0.95]"
           >
             Sai Dhruv
             <br />
-            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent inline-block pb-2">
               Yellanki.
             </span>
           </motion.h1>
 
           {/* Subtitle */}
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-            className="text-lg sm:text-2xl text-gray-500 max-w-xl font-light leading-relaxed mb-8 h-20"
+            className="text-lg sm:text-2xl text-gray-500 max-w-xl font-light leading-relaxed mb-8 h-auto min-h-[5rem]"
           >
-            <div className="text-foreground font-medium">
+            <div className="text-foreground font-medium h-8">
               <Typewriter
                 options={{
                   strings: [
@@ -87,25 +87,25 @@ export function Hero({ onNavigate }: HeroProps) {
             <span className="block mt-2 text-base sm:text-lg text-gray-400">
               Engineering Scalable Intelligent Systems for Real-World Impact.
             </span>
-          </motion.p>
+          </motion.div>
 
           {/* CTAs */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
-            className="flex flex-col sm:flex-row items-start gap-4"
+            className="flex flex-row items-center gap-4"
           >
             <Button
               size="lg"
               onClick={() => onNavigate("projects")}
-              className="rounded-full px-8 py-6 text-lg bg-black text-white hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="rounded-full px-6 sm:px-8 py-6 text-base sm:text-lg bg-black text-white hover:bg-gray-800 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               View Projects
             </Button>
             <button
               onClick={() => onNavigate("contact")}
-              className="group flex items-center gap-2 px-6 py-6 text-blue-600 hover:text-blue-700 transition-colors text-lg font-medium"
+              className="group flex items-center gap-2 px-0 sm:px-6 py-6 text-blue-600 hover:text-blue-700 transition-colors text-base sm:text-lg font-medium"
             >
               Get in touch
               <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -118,9 +118,9 @@ export function Hero({ onNavigate }: HeroProps) {
           initial={{ opacity: 0, scale: 0.9, x: 50 }}
           animate={{ opacity: 1, scale: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
-          className="order-1 lg:order-2 flex justify-center lg:justify-end relative"
+          className="order-1 lg:order-2 flex justify-center lg:justify-end relative mb-8 lg:mb-0 lg:mt-0"
         >
-          <div className="relative w-72 h-72 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/10 rotate-3 transition-transform hover:rotate-0 duration-500">
+          <div className="relative w-64 h-64 sm:w-96 sm:h-96 lg:w-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/10 rotate-3 transition-transform hover:rotate-0 duration-500">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent z-10 mix-blend-overlay" />
             <img
               src="/images/kpic.jpg"
