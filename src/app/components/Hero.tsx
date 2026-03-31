@@ -33,17 +33,7 @@ export function Hero({ onNavigate }: HeroProps) {
           style={{ y, opacity }}
           className="text-left w-full relative z-20 order-2 lg:order-1"
         >
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-            className="inline-flex items-center gap-2 mb-8"
-          >
-            <span className="px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-blue-600 bg-blue-50 border border-blue-100 rounded-full">
-              Available full-time May 2026
-            </span>
-          </motion.div>
+
 
           {/* Main Heading */}
           <motion.h1

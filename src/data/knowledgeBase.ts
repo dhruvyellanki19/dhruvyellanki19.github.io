@@ -11,7 +11,6 @@ export const knowledgeBase = {
         education: "Master's in Data Science from University of Maryland (UMD), Baltimore County (3.81/4.0 GPA). Bachelor's in Computer Science.",
         location: "Baltimore, MD / Washington DC Metro Area",
         email: "saidhruvyellanki@gmail.com",
-        availability: "Available for full-time roles starting May 2026. Open to internships and consulting."
     },
     experience: [
         {
