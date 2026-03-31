@@ -15,14 +15,22 @@ export const knowledgeBase = {
     },
     experience: [
         {
-            company: "Aurelius",
-            role: "AI Engineer Intern",
-            period: "Current",
-            details: "Developing RAG-based systems using Azure OpenAI. Fine-tuning LLMs for specialized tasks. Deploying production-grade solutions using Docker and Kubernetes. Improving retrieval accuracy by 30%."
+            company: "Aurelius Tech & Talent Solutions",
+            role: "AI Engineer",
+            period: "June 2025 - Present",
+            details: "Architected a GraphRAG pipeline using SurrealDB and Azure OpenAI text-embedding-3, reducing manual research time by 65% with <500ms latency. Fine-tuned a GPT-OSS-20B orchestrator with LangGraph driving GPT-4 multi-agent framework, achieving 81% F1-score. Engineered a DSPy declarative logic layer for hybrid model ensemble, increasing reasoning precision by 19%. Developed Context Graphs in SurrealDB for agentic audit trails, reducing hallucinations by 22%. Integrated OpenMemory for salience-based retrieval (96% recall, 30% fewer redundant tokens). Deployed containerized CI/CD with Docker and Kubernetes, ensuring 99.6% uptime."
         },
         {
-            company: "Previous Roles",
-            details: "3+ years of experience in AI/ML engineering, working across healthcare, finance, and enterprise automation domains. Built predictive models saving $2M annually."
+            company: "Watzmann Consulting",
+            role: "Data Analyst – Predictive Analytics & Machine Learning",
+            period: "June 2023 - June 2024",
+            details: "Built ETL pipelines on Azure Databricks with PySpark and Delta Lake Medallion Architecture for 200K+ records. Developed XGBoost + Bi-LSTM demand forecasting ensemble (MAE <0.6, 12% accuracy improvement). Designed MILP + Bi-LSTM workload optimization delivering 15% ROI. Ran A/B tests against ARIMA and Prophet baselines proving 15% operational lift. Implemented MLflow MLOps lifecycle and Power BI model-drift dashboards, cutting deployment cycles by 35%. Built a POC RAG app with LangChain, ChromaDB, and Llama 2 for root cause analysis, reducing investigation time by 45%."
+        },
+        {
+            company: "Ramphal Technologies",
+            role: "Data Science Intern",
+            period: "December 2022 - May 2023",
+            details: "Spearheaded a real-time RabbitMQ + PostgreSQL event pipeline ingesting 10,000+ telemetry events per second streamed to Tableau for sub-second monitoring. Trained an LSTM + XGBoost hybrid ensemble to forecast application latency, reducing request delay by 7.5ms. Built automated Tableau health-drift dashboards, cutting reporting latency by 30%."
         }
     ],
     projects: [
